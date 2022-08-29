@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Online store of auto-borrows.Catalog" />
+    <title>Online auto parts store: catalog</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="no-js catalog-body">
+    <header class="page-header">
+      <div class="page-header__wrap">
+        <div class="page-header__top">
+          <div class="page-header__container">
+            <h1 class="visually-hidden">Online auto parts store: Home</h1>
+            <button class="page-header__menu-toggle" type="button">
+              <span class="visually-hidden">Open the menu</span>
+              <span class="page-header__menu-toggle-bar"></span>
+            </button>
+            <a class="logo">
+              <img
+                src="img/logo.svg"
+                alt="The logo of the online store of auto parts"
+                width="102"
+                height="52"
+              />
+            </a>
+            <div class="menu">
+              <div class="menu__wrap">
+                <ul class="menu__user">
+                  <li class="menu__user-item">
+                    <a class="menu__user-link menu__user-link--log-in" href="#!"
+                      >To come in</a
+                    >
+                  </li>
+                  <li class="menu__user-item">
+                    <a
+                      class="menu__user-link menu__user-link--sign-up"
+                      href="#!"
+                      >Registration</a
+                    >
+                  </li>
+                  <li class="menu__user-item">
+                    <a
+                      class="menu__user-link menu__user-link--favorites"
+                      href="#!"
+                      >Favorites</a
+                    >
+                  </li>
+                </ul>
+                <ul class="menu__main">
+                  <li class="menu__main-item">
+                    <a class="menu__main-link menu__main-link--shops" href="#!"
+                      >The shops</a
+                    >
+                  </li>
+                  <li class="menu__main-item">
+                    <a
+                      class="menu__main-link menu__main-link--actions"
+                      href="#!"
+                      >Stock</a
+                    >
+                  </li>
+                  <li class="menu__main-item">
+                    <a
+                      class="menu__main-link menu__main-link--delivery"
+                      href="#!"
+                      >Shipping and payment</a
+                    >
+                  </li>
+                </ul>
+                <ul class="menu__cats">
+                  <li class="menu__cats-item">
+                    <a class="menu__cats-link" href="#!">Spare parts catalog</a>
+                  </li>
+                  <li class="menu__cats-item">
+                    <a class="menu__cats-link" href="#!">Catalog</a>
+                  </li>
+                  <li class="menu__cats-item">
+                    <a class="menu__cats-link" href="#!">Tires</a>
+                  </li>
+                  <li class="menu__cats-item">
+                    <a class="menu__cats-link" href="#!">Disks</a>
+                  </li>
+                  <li class="menu__cats-item">
+                    <a class="menu__cats-link" href="#!">Accumulators</a>
+                  </li>
+                  <li class="menu__cats-item">
+                    <a class="menu__cats-link" href="#!">Car</a>
+                  </li>
+                  <li class="menu__cats-item">
+                    <a class="menu__cats-link" href="#!">Auto lamps</a>
+                  </li>
+                  <li class="menu__cats-item">
+                    <a class="menu__cats-link" href="#!">Accessories</a>
+                  </li>
+                </ul>
+                <a class="menu__address" href="#!">St. Petersburg</a>
+              </div>
+            </div>
+            <ul class="user-nav">
+              <li class="user-nav__item">
+                <a class="user-nav__link user-nav__link--favorites" href="#!">
+                  <span class="visually-hidden">Favorites</span>
+                </a>
+              </li>
+              <li class="user-nav__item">
+                <a class="user-nav__link user-nav__link--account" href="#!">
+                  <span class="visually-hidden">Personal Area</span>
+                </a>
+              </li>
+              <li class="user-nav__item">
+                <a class="user-nav__link user-nav__link--cart" href="#!">
+                  <span class="visually-hidden">Basket</span>
+                  <span class="user-nav__link-content">1</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="page-header__bottom nav">
+          <div class="nav__container">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Spare parts catalog</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Catalog</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="#!">Tires</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Disks</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Accumulators</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Car</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Auto lamps</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Accessories</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-catalog main">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">home</a></li>
+        <li><a href="catalog.html">Tires</a></li>
+        <li class="breadcrumbs__current breadcrumbs__current--desctop">
+          Winter tires
+        </li>
+        <li class="breadcrumbs__mobile"><a>Kama</a></li>
+        <li
+          class="breadcrumbs__mobile breadcrumbs__current breadcrumbs__current--mobile"
+        >
+          Kama winter tires
+        </li>
+      </ul>
+
+      <h1>Non -shifted tires</h1>
+
+      <section class="top-filters filters filter">
+        <h2 class="visually-hidden">Filter of goods</h2>
+        <div class="top-filters__wrapper">
+          <div class="top-filters__offers">
+            <ul>
+              <li>
+                <a href="#!">All -wheel drive</a>
+              </li>
+              <li>
+                <a href="#!">from 5000</a>
+              </li>
+              <li>
+                <a href="#!">Nokian</a>
+              </li>
+              <li>
+                <a href="#!">from 5000</a>
+              </li>
+              <li>
+                <a href="#!">more</a>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__select-wrapper top-filters__city">
+            <div class="custom-select custom-select__city">
+              <button
+                class="custom-select__title filters__sorting-select"
+                type="button"
+              >
+                Naberezhnye Chelny
+              </button>
+              <input type="hidden" name="modification" />
+              <ul>
+                <li data-value="Naberezhnye Chelny">Naberezhnye Chelny</li>
+              </ul>
+            </div>
+          </div>
+          <div class="top-filters__sorting">
+            <div class="top-filters__sorting-type">
+              <div
+                class="filter__select-wrapper filter__select-wrapper--popular"
+              >
+                <div class="custom-select" id="popular-select">
+                  <button
+                    class="custom-select__title filters__sorting-select"
+                    type="button"
+                  >
+                    By popularity
+                  </button>
+                  <input type="hidden" name="popular" />
+                  <ul>
+                    <li data-value="By popularity">By popularity</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="top-filters__sorting-button" type="button">
+                By popularity
+              </button>
+            </div>
+
+            <div class="top-filters__sorting-view">
+              <button
+                type="button"
+                name="button"
+                class="top-filters__sorting-tile"
+              >
+                <span class="visually-hidden">Show tiles</span>
+              </button>
+              <button
+                type="button"
+                name="button"
+                class="top-filters__sorting-simple"
+              >
+                <span class="visually-hidden">Show the list</span>
+              </button>
+            </div>
+
+            <div class="top-filters__sorting-mobile">
+              <button type="button">Filters</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="left-filters__wrapper">
+        <section class="left-filters left-filter">
+          <form class="left-filter__form" method="get">
+            <div class="left-filter__options">
+              <div class="left-filter__type">
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__type-filter left-filter__active-type"
+                >
+                  Options
+                </button>
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__type-filter"
+                >
+                  On the brand
+                </button>
+              </div>
+              <div class="left-filter__fieldset">
+                <p class="left-filter__legend">Seasonality</p>
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__accordion-close"
+                >
+                  <span class="visually-hidden">Close the section</span>
+                </button>
+                <div class="left-filter__accordion-wrapper">
+                  <ul>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
+                        type="checkbox"
+                        name="winter"
+                        id="filter-winter"
+                      />
+                      <label for="filter-winter">Winter</label>
+                      <button
+                        type="button"
+                        name="button"
+                        class="left-filter__question"
+                      >
+                        <span class="visually-hidden">There is a question</span>
+                      </button>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
+                        type="checkbox"
+                        name="summer"
+                        id="filter-summer"
+                      />
+                      <label for="filter-summer">Summer</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="left-filter__fieldset">
+                <p class="left-filter__legend">Tire type</p>
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__accordion-close"
+                >
+                  <span class="visually-hidden">Close the section</span>
+                </button>
+                <div class="left-filter__accordion-wrapper">
+                  <ul>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
+                        type="checkbox"
+                        name="all-tires"
+                        id="filter-all-tires"
+                        checked=""
+                      />
+                      <label for="filter-all-tires">All</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
+                        type="checkbox"
+                        name="studded"
+                        id="filter-studded"
+                      />
+                      <label for="filter-studded">Sawdled</label>
+                      <button
+                        type="button"
+                        name="button"
+                        class="left-filter__question"
+                      >
+                        <span class="visually-hidden">There is a question</span>
+                      </button>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
+                        type="checkbox"
+                        name="studless"
+                        id="filter-studless"
+                      />
+                      <label for="filter-studless">Non -shipped</label>
+                      <button
+                        type="button"
+                        name="button"
+                        class="left-filter__question"
+                      >
+                        <span class="visually-hidden">There is a question</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="left-filter__fieldset left-filter__price left-filter__price--fieldset"
+              >
+                <p class="left-filter__legend">Price</p>
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__accordion-close"
+                >
+                  <span class="visually-hidden">Close the section</span>
+                </button>
+                <div class="left-filter__accordion-wrapper">
+                  <div class="left-filter__range-controls">
+                    <div class="left-filter__scale">
+                      <div class="left-filter__bar"></div>
+                    </div>
+                    <div
+                      class="left-filter__range-toggle left-filter__range-toggle--min"
+                    ></div>
+                    <div
+                      class="left-filter__range-toggle left-filter__range-toggle--max"
+                    ></div>
+                  </div>
+                  <div class="left-filter__price-controls">
+                    <div
+                      class="left-filter__row left-filter__row--input left-filter__min-price"
+                    >
+                      <label for="min-price-mask">from</label>
+                      <input
+                        type="text"
+                        name="min-price"
+                        value="2000"
+                        pattern="^[ 0-9]+$"
+                        id="min-price-mask"
+                      />
+                    </div>
+                    <div
+                      class="left-filter__row left-filter__row--input left-filter__max-price"
+                    >
+                      <label for="max-price-mask">to</label>
+                      <input
+                        type="text"
+                        name="max-price"
+                        value="12000"
+                        pattern="^[ 0-9]+$"
+                        id="max-price-mask"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="filter left-filter__fieldset left-filter__select-fieldset left-filter__diameter-fieldset"
+              >
+                <div class="filter__select-wrapper">
+                  <p class="left-filter__legend">In diameter</p>
+                  <button
+                    type="button"
+                    name="button"
+                    class="left-filter__question"
+                  >
+                    <span class="visually-hidden">There is a question</span>
+                  </button>
+                  <div class="custom-select" id="diameter-select">
+                    <button class="custom-select__title" type="button">
+                      16
+                    </button>
+                    <input type="hidden" name="diameter" />
+                    <ul>
+                      <li data-value="10">10</li>
+                      <li data-value="12">12</li>
+                      <li data-value="12C">12C</li>
+                      <li data-value="14">14</li>
+                      <li data-value="14C">14C</li>
+                      <li data-value="15">15</li>
+                      <li data-value="15C">15C</li>
+                      <li data-value="16" class="selected">16</li>
+                      <li data-value="16C">16C</li>
+                      <li data-value="17">17</li>
+                      <li data-value="17C">17C</li>
+                      <li data-value="18">18</li>
+                      <li data-value="18C">18C</li>
+                      <li data-value="19">19</li>
+                      <li data-value="20">20</li>
+                      <li data-value="21">21</li>
+                      <li data-value="22">22</li>
+                      <li data-value="23">23</li>
+                      <li data-value="24">24</li>
+                      <li data-value="25">25</li>
+                      <li data-value="8">8</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="filter left-filter__fieldset left-filter__select-fieldset"
+              >
+                <div class="filter__select-wrapper">
+                  <p class="left-filter__legend">Profile</p>
+                  <button
+                    type="button"
+                    name="button"
+                    class="left-filter__question"
+                  >
+                    <span class="visually-hidden">There is a question</span>
+                  </button>
+                  <div class="custom-select" id="profile-select">
+                    <button class="custom-select__title" type="button">
+                      <span class="visually-hidden">Select the profile</span>
+                    </button>
+                    <input type="hidden" name="profile" />
+                    <ul></ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="filter left-filter__fieldset left-filter__select-fieldset"
+              >
+                <div class="filter__select-wrapper">
+                  <p class="left-filter__legend">Width</p>
+                  <button
+                    type="button"
+                    name="button"
+                    class="left-filter__question"
+                  >
+                    <span class="visually-hidden">There is a question</span>
+                  </button>
+                  <div class="custom-select" id="width-select">
+                    <button class="custom-select__title" type="button">
+                      <span class="visually-hidden">Select the width</span>
+                    </button>
+                    <input type="hidden" name="width" />
+                    <ul></ul>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="left-filter__fieldset left-filter__checkbox-fieldset left-filter__brand"
+              >
+                <p class="left-filter__legend">Brand</p>
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__accordion-close"
+                >
+                  <span class="visually-hidden">Close the section</span>
+                </button>
+                <div class="left-filter__accordion-wrapper">
+                  <input
+                    id="brand-input"
+                    type="text"
+                    class="left-filter__input left-filter__input--brand"
+                    placeholder="Enter the tire brand"
+                    aria-label="Enter the tire brand"
+                  />
+                  <ul>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-gudrich"
+                        checked=""
+                      />
+                      <label for="filter-gudrich">B Gudrich</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-wridrestone"
+                        checked=""
+                      />
+                      <label for="filter-wridrestone">Wridrestone</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-rarym"
+                      />
+                      <label for="filter-rarym">Rarym</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-bfhide"
+                      />
+                      <label for="filter-bfhide">BF hide</label>
+                    </li>
+                  </ul>
+                  <button
+                    type="button"
+                    name="button"
+                    class="left-filter__show-more"
+                  >
+                    Show more
+                  </button>
+                </div>
+              </div>
+              <div
+                class="left-filter__fieldset left-filter__checkbox-fieldset left-filter__model"
+              >
+                <p class="left-filter__legend">Model</p>
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__accordion-close"
+                >
+                  <span class="visually-hidden">Close the section</span>
+                </button>
+                <div class="left-filter__accordion-wrapper">
+                  <input
+                    id="model-input"
+                    type="text"
+                    class="left-filter__input left-filter__input--model"
+                    placeholder="Enter the tire model"
+                    aria-label="Enter the tire model"
+                  />
+                  <ul>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-ALINA"
+                        checked=""
+                      />
+                      <label for="filter-ALINA">ALINA</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-BLIWWAS"
+                        checked=""
+                      />
+                      <label for="filter-BLIWWAS">BLIWWAS</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-moode"
+                      />
+                      <label for="filter-moode">FORCE Moode</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-icegide"
+                      />
+                      <label for="filter-icegide">ICE Gide</label>
+                    </li>
+                  </ul>
+                  <button
+                    type="button"
+                    name="button"
+                    class="left-filter__show-more"
+                  >
+                    Show more
+                  </button>
+                </div>
+              </div>
+              <div class="left-filter__fieldset left-filter__technology">
+                <div class="left-filter__technology-wrapper">
+                  <p class="left-filter__legend">Technology</p>
+                  <button
+                    type="button"
+                    name="button"
+                    class="left-filter__question"
+                  >
+                    <span class="visually-hidden">There is a question</span>
+                  </button>
+                </div>
+                <ul>
+                  <li class="left-filter__option">
+                    <input
+                      class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                      type="checkbox"
+                      id="filter-yes"
+                    />
+                    <label for="filter-yes">Yes</label>
+                  </li>
+                  <li class="left-filter__option">
+                    <input
+                      class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                      type="checkbox"
+                      id="filter-not"
+                    />
+                    <label for="filter-not">Not</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="left-filter__fieldset left-filter__stock">
+                <p class="left-filter__legend">Stock</p>
+                <ul>
+                  <li class="left-filter__option left-filter__option--sale">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="filter-sale"
+                      checked=""
+                    />
+                    <label for="filter-sale">SALE</label>
+                  </li>
+                  <li class="left-filter__option left-filter__option--new">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="filter-new"
+                    />
+                    <label for="filter-new">NEW</label>
+                  </li>
+                  <li class="left-filter__option left-filter__option--stock">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="filter-hit"
+                    />
+                    <label for="filter-hit">HIT</label>
+                  </li>
+                  <li class="left-filter__option left-filter__option--present">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="filter-present"
+                      checked=""
+                    />
+                    <label for="filter-present">Gift</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="left-filter__fieldset left-filter__country-fieldset">
+                <p class="left-filter__legend">Countries</p>
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__accordion-close"
+                >
+                  <span class="visually-hidden">Close the section</span>
+                </button>
+                <div class="left-filter__accordion-wrapper">
+                  <ul>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-russia1"
+                        checked=""
+                      />
+                      <label for="filter-russia1">Russia</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-germany1"
+                        checked=""
+                      />
+                      <label for="filter-germany1">Germany</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-russia2"
+                      />
+                      <label for="filter-russia2">Russia</label>
+                    </li>
+                    <li class="left-filter__option">
+                      <input
+                        class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                        type="checkbox"
+                        id="filter-germany2"
+                      />
+                      <label for="filter-germany2">Germany</label>
+                    </li>
+                  </ul>
+                  <button
+                    type="button"
+                    name="button"
+                    class="left-filter__show-more"
+                  >
+                    Show more
+                  </button>
+                </div>
+              </div>
+              <div class="left-filter__fieldset left-filter__submit">
+                <button type="submit" class="left-filter__submit-button">
+                  Pick up
+                </button>
+                <button type="button" class="left-filter__extra">
+                  Extra options
+                </button>
+                <button type="button" class="left-filter__reset">
+                  Throw the filter
+                </button>
+              </div>
+            </div>
+
+            <div class="filters left-filter__models form-models">
+              <div class="form-models__title">
+                <h2>Filters</h2>
+                <button type="button" class="form-models__back">
+                  <span class="visually-hidden">Close the filter</span>
+                </button>
+              </div>
+              <div class="form-models__type">
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__type-filter left-filter__option-button"
+                >
+                  According to the parameters
+                </button>
+                <button
+                  type="button"
+                  name="button"
+                  class="left-filter__type-filter left-filter__models-button left-filter__active-type"
+                >
+                  On the brand
+                </button>
+              </div>
+              <div class="form-models__fieldset form-models__season">
+                <p class="form-models__legend">Seasonality</p>
+                <ul>
+                  <li class="left-filter__option">
+                    <button
+                      type="button"
+                      name="button"
+                      class="left-filter__question"
+                    >
+                      <span class="visually-hidden">There is a question</span>
+                    </button>
+                    <input
+                      class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                      type="checkbox"
+                      id="summer"
+                    />
+                    <label for="summer">Summer</label>
+                  </li>
+                  <li class="left-filter__option">
+                    <button
+                      type="button"
+                      name="button"
+                      class="left-filter__question"
+                    >
+                      <span class="visually-hidden">There is a question</span>
+                    </button>
+                    <input
+                      class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
+                      type="checkbox"
+                      id="winter"
+                      checked=""
+                    />
+                    <label for="winter">Winter</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter form-models__fieldset">
+                <p class="form-models__legend">Brand</p>
+                <div class="filter__select-wrapper">
+                  <div class="custom-select" id="brand-select">
+                    <button
+                      class="custom-select__title filters__sorting-select"
+                      type="button"
+                    >
+                      BMW
+                    </button>
+                    <input type="hidden" name="brand" />
+                    <ul>
+                      <li data-value="BMW">BMW</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter form-models__fieldset">
+                <p class="form-models__legend">Model</p>
+                <div class="filter__select-wrapper">
+                  <div class="custom-select" id="model-select">
+                    <button
+                      class="custom-select__title filters__sorting-select"
+                      type="button"
+                    >
+                      1-series
+                    </button>
+                    <input type="hidden" name="model" />
+                    <ul>
+                      <li data-value="1-series">1-series</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter form-models__fieldset">
+                <p class="form-models__legend">Body</p>
+                <div class="filter__select-wrapper">
+                  <div class="custom-select" id="car-body-select">
+                    <button
+                      class="custom-select__title filters__sorting-select"
+                      type="button"
+                    >
+                      E81 3d
+                    </button>
+                    <input type="hidden" name="car-body" />
+                    <ul>
+                      <li data-value="E81 3d">E81 3d</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter form-models__fieldset">
+                <p class="form-models__legend">Modification</p>
+                <div class="filter__select-wrapper">
+                  <div class="custom-select" id="modification-select">
+                    <button
+                      class="custom-select__title filters__sorting-select"
+                      type="button"
+                    >
+                      116 d
+                    </button>
+                    <input type="hidden" name="modification" />
+                    <ul>
+                      <li data-value="116 d">116 d</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="form-models__fieldset form-models__size">
+                <p class="form-models__legend">R16</p>
+                <ul>
+                  <li class="left-filter__option">
+                    <input class="visually-hidden" type="checkbox" id="size1" />
+                    <label for="size1">205/55 R17</label>
+                  </li>
+                  <li class="left-filter__option">
+                    <input class="visually-hidden" type="checkbox" id="size2" />
+                    <label for="size2">205/55 R17</label>
+                  </li>
+                  <li class="left-filter__option">
+                    <input class="visually-hidden" type="checkbox" id="size3" />
+                    <label for="size3">205/55 R17</label>
+                  </li>
+                  <li class="left-filter__option">
+                    <input class="visually-hidden" type="checkbox" id="size4" />
+                    <label for="size4">205/55 R17</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-models__fieldset form-models__size">
+                <p class="form-models__legend">R17</p>
+                <div class="form-models__size-wrapper">
+                  <div class="form-models__size-container">
+                    <p class="form-models__size-text">Front axle</p>
+                    <ul>
+                      <li class="left-filter__option">
+                        <input
+                          class="visually-hidden"
+                          type="checkbox"
+                          id="size5"
+                        />
+                        <label for="size5">215/45 R17</label>
+                      </li>
+                      <li class="left-filter__option">
+                        <input
+                          class="visually-hidden"
+                          type="checkbox"
+                          id="size6"
+                        />
+                        <label for="size6">215/50 R17</label>
+                      </li>
+                      <li class="left-filter__option">
+                        <input
+                          class="visually-hidden"
+                          type="checkbox"
+                          id="size7"
+                        />
+                        <label for="size7">205/50 R17</label>
+                      </li>
+                      <li class="left-filter__option">
+                        <input
+                          class="visually-hidden"
+                          type="checkbox"
+                          id="size8"
+                        />
+                        <label for="size8">195/55 R17</label>
+                      </li>
+                      <li class="left-filter__option">
+                        <input
+                          class="visually-hidden"
+                          type="checkbox"
+                          id="size9"
+                        />
+                        <label for="size9">225/55 R17</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="form-models__size-container">
+                    <p class="form-models__size-text">Rear axle</p>
+                    <ul>
+                      <li class="left-filter__option">
+                        <input
+                          class="visually-hidden"
+                          type="checkbox"
+                          id="size10"
+                        />
+                        <label for="size10">215/45 R17</label>
+                      </li>
+                      <li class="left-filter__option">
+                        <input
+                          class="visually-hidden"
+                          type="checkbox"
+                          id="size11"
+                          checked=""
+                        />
+                        <label for="size11">215/50 R17</label>
+                      </li>
+                      <li class="left-filter__option">
+                        <input
+                          class="visually-hidden"
+                          type="checkbox"
+                          id="size12"
+                        />
+                        <label for="size12">245/50 R17</label>
+                      </li>
+                      <li class="left-filter__option">
+                        <input
+                          class="visually-hidden"
+                          type="checkbox"
+                          id="size13"
+                        />
+                        <label for="size13">205/55 R17</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="form-models__fieldset form-models__size form-models__size--R18"
+              >
+                <p class="form-models__legend">R18</p>
+                <ul>
+                  <li class="left-filter__option">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="size14"
+                    />
+                    <label for="size14">255/40 R18</label>
+                  </li>
+                  <li class="left-filter__option">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="size15"
+                    />
+                    <label for="size15">245/45 R18</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section class="catalog wares">
+          <h2 class="visually-hidden">Catalog</h2>
+          <div class="wares__wrapper">
+            <ul class="wares__list">
+              <li class="wares__item wares__item--sale">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence wares__presence--none">
+                  <div class="wares__presence-text">Not available</div>
+                  <a class="wares__presence-link" href="#!"
+                    >Report about admission</a
+                  >
+                </div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--presence">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence" aria-hidden="true"></div>
+                <div class="wares__price">$1168</div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--sale">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence wares__presence--none">
+                  <div class="wares__presence-text">Not available</div>
+                  <a class="wares__presence-link" href="#!"
+                    >Report about admission</a
+                  >
+                </div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--sale wares__item--hidden">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence wares__presence--none">
+                  <div class="wares__presence-text">Not available</div>
+                  <a class="wares__presence-link" href="#!"
+                    >Report about admission</a
+                  >
+                </div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--presence">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence" aria-hidden="true"></div>
+                <div class="wares__price">$1168</div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--sale wares__item--hidden">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence wares__presence--none">
+                  <div class="wares__presence-text">Not available</div>
+                  <a class="wares__presence-link" href="#!"
+                    >Report about admission</a
+                  >
+                </div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--sale wares__item--hidden">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence wares__presence--none">
+                  <div class="wares__presence-text">Not available</div>
+                  <a class="wares__presence-link" href="#!"
+                    >Report about admission</a
+                  >
+                </div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--presence">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence" aria-hidden="true"></div>
+                <div class="wares__price">$1168</div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--sale wares__item--hidden">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence wares__presence--none">
+                  <div class="wares__presence-text">Not available</div>
+                  <a class="wares__presence-link" href="#!"
+                    >Report about admission</a
+                  >
+                </div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--sale wares__item--hidden">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence wares__presence--none">
+                  <div class="wares__presence-text">Not available</div>
+                  <a class="wares__presence-link" href="#!"
+                    >Report about admission</a
+                  >
+                </div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--presence wares__item--hidden">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence" aria-hidden="true"></div>
+                <div class="wares__price">$1168</div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+              <li class="wares__item wares__item--sale wares__item--hidden">
+                <div class="wares__attributes">
+                  <button
+                    class="favorite"
+                    title="Add to favorites"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Add to favorites </span>
+                  </button>
+                  <span class="wares__summer" aria-hidden="true"></span>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                    />
+                    <!-- 1x: 151px; 2x: 302px -->
+                    <img
+                      src="img/tire-2@1x.jpg"
+                      srcset="img/tire-2@2x.jpg"
+                      width="151"
+                      height="181"
+                      alt="Car wheel"
+                    />
+                  </picture>
+                  <figcaption class="wares__figcaption">
+                    Tire 205/80 R16 104Q Misha RF Power Grum
+                  </figcaption>
+                </figure>
+                <div class="wares__presence wares__presence--none">
+                  <div class="wares__presence-text">Not available</div>
+                  <a class="wares__presence-link" href="#!"
+                    >Report about admission</a
+                  >
+                </div>
+                <a class="wares__link" href="#!">
+                  <span class="visually-hidden"> Go to the product page </span>
+                </a>
+              </li>
+            </ul>
+            <div class="wares__show-more">
+              <button class="wares__show-button" type="button">
+                Show more
+              </button>
+            </div>
+            <div class="catalog__pagination">
+              <ul class="catalog__pagination-list">
+                <li
+                  class="catalog__pagination-item catalog__pagination-item--current"
+                >
+                  <a href="#!">1</a>
+                </li>
+                <li class="catalog__pagination-item"><a href="#!">2</a></li>
+                <li class="catalog__pagination-item"><a href="#!">3</a></li>
+                <li class="catalog__pagination-item"><a href="#!">4</a></li>
+                <li class="catalog__pagination-item"><a href="#!">5</a></li>
+                <li
+                  class="catalog__pagination-item catalog__pagination-item--delimiter"
+                >
+                  ..
+                </li>
+                <li class="catalog__pagination-item"><a href="#!">11</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="notification">
+        <h2>Tire fitting</h2>
+        <p>Any complexity and without queues</p>
+      </section>
+    </main>
+    <section class="wares wares--suggestion">
+      <div class="wares__container tabs">
+        <h2 class="wares__title">
+          With this <span class="wares__not-mobile">by goods</span> Buy
+        </h2>
+        <div class="tabs__list-wrap">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <a class="tabs__link tabs__link--active" href="#wares-sug-spares"
+                >Spare parts</a
+              >
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#wares-sug-autochemicals"
+                >Autochemistry</a
+              >
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#wares-sug-tires">Tires and discs</a>
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#wares-sug-autoelectronics"
+                >Auto electronics</a
+              >
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#wares-sug-tools">Tools</a>
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#wares-sug-accessories"
+                >Accessories and more</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <section class="tabs__panel tabs__panel--active" id="wares-sug-spares">
+          <h3 class="visually-hidden">Spare parts</h3>
+          <div class="wares__list slider slider--big-dots">
+            <div class="wares__item wares__item--sale">
+              <div class="wares__attributes">
+                <button class="favorite" title="Add to favorites" type="button">
+                  <span class="visually-hidden"> Add to favorites </span>
+                </button>
+                <span class="wares__summer" aria-hidden="true"></span>
+              </div>
+              <a class="wares__overlay" href="#!"> Fast viewing </a>
+              <figure class="wares__fig">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                  />
+                  <!-- 1x: 151px; 2x: 302px -->
+                  <img
+                    src="img/tire-2@1x.jpg"
+                    srcset="img/tire-2@2x.jpg 2x"
+                    width="151"
+                    height="181"
+                    alt="Car wheel"
+                  />
+                </picture>
+                <figcaption class="wares__figcaption">
+                  Tire 205/80 R16 104Q Misha RF Power Grum
+                </figcaption>
+              </figure>
+              <div class="wares__presence wares__presence--none">
+                <div class="wares__presence-text">Not available</div>
+                <a class="wares__presence-link" href="#!"
+                  >Report about admission</a
+                >
+              </div>
+              <a class="wares__link" href="#!">
+                <span class="visually-hidden"> Go to the product page </span>
+              </a>
+            </div>
+
+            <div class="wares__item">
+              <div class="wares__attributes">
+                <button class="favorite" title="Add to favorites" type="button">
+                  <span class="visually-hidden"> Add to favorites </span>
+                </button>
+                <span class="wares__winter" aria-hidden="true"></span>
+              </div>
+              <a class="wares__overlay" href="#!"> Fast viewing </a>
+              <figure class="wares__fig">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                  />
+                  <!-- 1x: 151px; 2x: 302px -->
+                  <img
+                    src="img/tire-2@1x.jpg"
+                    srcset="img/tire-2@2x.jpg 2x"
+                    width="151"
+                    height="181"
+                    alt="Car wheel"
+                  />
+                </picture>
+                <figcaption class="wares__figcaption">
+                  Tire 205/80 R16 104Q Misha RF Power Grum
+                </figcaption>
+              </figure>
+              <div class="wares__presence" aria-hidden="true"></div>
+              <div class="wares__price">$1168</div>
+              <a class="wares__link" href="#!">
+                <span class="visually-hidden"> Go to the product page </span>
+              </a>
+            </div>
+
+            <div class="wares__item wares__item--sale">
+              <div class="wares__attributes">
+                <button
+                  class="favorite favorite--active"
+                  title="Remove from the chosen one"
+                  type="button"
+                >
+                  <span class="visually-hidden">
+                    Remove from the chosen one
+                  </span>
+                </button>
+                <span class="wares__summer" aria-hidden="true"></span>
+              </div>
+              <a class="wares__overlay" href="#!"> Fast viewing </a>
+              <figure class="wares__fig">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                  />
+                  <!-- 1x: 151px; 2x: 302px -->
+                  <img
+                    src="img/tire-2@1x.jpg"
+                    srcset="img/tire-2@2x.jpg 2x"
+                    width="151"
+                    height="181"
+                    alt="Car wheel"
+                  />
+                </picture>
+                <figcaption class="wares__figcaption">
+                  Tire 205/80 R16 104Q Misha RF Power Grum
+                </figcaption>
+              </figure>
+              <div class="wares__presence wares__presence--none">
+                <div class="wares__presence-text">Not available</div>
+                <a class="wares__presence-link" href="#!"
+                  >Report about admission</a
+                >
+              </div>
+              <a class="wares__link" href="#!">
+                <span class="visually-hidden"> Go to the product page </span>
+              </a>
+            </div>
+
+            <div class="wares__item">
+              <div class="wares__attributes">
+                <button class="favorite" title="Add to favorites" type="button">
+                  <span class="visually-hidden"> Add to favorites </span>
+                </button>
+                <span class="wares__summer" aria-hidden="true"></span>
+              </div>
+              <a class="wares__overlay" href="#!"> Fast viewing </a>
+              <figure class="wares__fig">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                  />
+                  <!-- 1x: 151px; 2x: 302px -->
+                  <img
+                    src="img/tire-2@1x.jpg"
+                    srcset="img/tire-2@2x.jpg 2x"
+                    width="151"
+                    height="181"
+                    alt="Car wheel"
+                  />
+                </picture>
+                <figcaption class="wares__figcaption">
+                  Tire 245/60 R18 105T Contyther Crosh Conta...
+                </figcaption>
+              </figure>
+              <div class="wares__presence" aria-hidden="true"></div>
+              <div class="wares__price">$1168</div>
+              <a class="wares__link" href="#!">
+                <span class="visually-hidden"> Go to the product page </span>
+              </a>
+            </div>
+
+            <div class="wares__item wares__item--sale">
+              <div class="wares__attributes">
+                <button class="favorite" title="Add to favorites" type="button">
+                  <span class="visually-hidden"> Add to favorites </span>
+                </button>
+                <span class="wares__summer" aria-hidden="true"></span>
+              </div>
+              <a class="wares__overlay" href="#!"> Fast viewing </a>
+              <figure class="wares__fig">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                  />
+                  <!-- 1x: 151px; 2x: 302px -->
+                  <img
+                    src="img/tire-2@1x.jpg"
+                    srcset="img/tire-2@2x.jpg 2x"
+                    width="151"
+                    height="181"
+                    alt="Car wheel"
+                  />
+                </picture>
+                <figcaption class="wares__figcaption">
+                  Tire 205/80 R16 104Q Misha RF Power Grum
+                </figcaption>
+              </figure>
+              <div class="wares__presence wares__presence--none">
+                <div class="wares__presence-text">Not available</div>
+                <a class="wares__presence-link" href="#!"
+                  >Report about admission</a
+                >
+              </div>
+              <a class="wares__link" href="#!">
+                <span class="visually-hidden"> Go to the product page </span>
+              </a>
+            </div>
+
+            <div class="wares__item">
+              <div class="wares__attributes">
+                <button class="favorite" title="Add to favorites" type="button">
+                  <span class="visually-hidden"> Add to favorites </span>
+                </button>
+                <span class="wares__winter" aria-hidden="true"></span>
+              </div>
+              <a class="wares__overlay" href="#!"> Fast viewing </a>
+              <figure class="wares__fig">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                  />
+                  <!-- 1x: 151px; 2x: 302px -->
+                  <img
+                    src="img/tire-2@1x.jpg"
+                    srcset="img/tire-2@2x.jpg 2x"
+                    width="151"
+                    height="181"
+                    alt="Car wheel"
+                  />
+                </picture>
+                <figcaption class="wares__figcaption">
+                  Tire 205/80 R16 104Q Misha RF Power Grum
+                </figcaption>
+              </figure>
+              <div class="wares__presence" aria-hidden="true"></div>
+              <div class="wares__price">$1168</div>
+              <a class="wares__link" href="#!">
+                <span class="visually-hidden"> Go to the product page </span>
+              </a>
+            </div>
+
+            <div class="wares__item wares__item--sale">
+              <div class="wares__attributes">
+                <button
+                  class="favorite favorite--active"
+                  title="Remove from the chosen one"
+                  type="button"
+                >
+                  <span class="visually-hidden">
+                    Remove from the chosen one
+                  </span>
+                </button>
+                <span class="wares__summer" aria-hidden="true"></span>
+              </div>
+              <a class="wares__overlay" href="#!"> Fast viewing </a>
+              <figure class="wares__fig">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                  />
+                  <!-- 1x: 151px; 2x: 302px -->
+                  <img
+                    src="img/tire-2@1x.jpg"
+                    srcset="img/tire-2@2x.jpg 2x"
+                    width="151"
+                    height="181"
+                    alt="Car wheel"
+                  />
+                </picture>
+                <figcaption class="wares__figcaption">
+                  Tire 205/80 R16 104Q Misha RF Power Grum
+                </figcaption>
+              </figure>
+              <div class="wares__presence wares__presence--none">
+                <div class="wares__presence-text">Not available</div>
+                <a class="wares__presence-link" href="#!"
+                  >Report about admission</a
+                >
+              </div>
+              <a class="wares__link" href="#!">
+                <span class="visually-hidden"> Go to the product page </span>
+              </a>
+            </div>
+
+            <div class="wares__item">
+              <div class="wares__attributes">
+                <button class="favorite" title="Add to favorites" type="button">
+                  <span class="visually-hidden"> Add to favorites </span>
+                </button>
+                <span class="wares__summer" aria-hidden="true"></span>
+              </div>
+              <a class="wares__overlay" href="#!"> Fast viewing </a>
+              <figure class="wares__fig">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x"
+                  />
+                  <!-- 1x: 151px; 2x: 302px -->
+                  <img
+                    src="img/tire-2@1x.jpg"
+                    srcset="img/tire-2@2x.jpg 2x"
+                    width="151"
+                    height="181"
+                    alt="Car wheel"
+                  />
+                </picture>
+                <figcaption class="wares__figcaption">
+                  Tire 245/60 R18 105T Contyther Crosh Conta...
+                </figcaption>
+              </figure>
+              <div class="wares__presence" aria-hidden="true"></div>
+              <div class="wares__price">$1168</div>
+              <a class="wares__link" href="#!">
+                <span class="visually-hidden"> Go to the product page </span>
+              </a>
+            </div>
+          </div>
+          <div class="wares__footer">
+            <a class="wares__link-more" href="#!">See more</a>
+          </div>
+        </section>
+
+        <section class="tabs__panel" id="wares-sug-autochemicals">
+          <h3 class="visually-hidden">Autochemistry</h3>
+        </section>
+
+        <section class="tabs__panel" id="wares-sug-tires">
+          <h3 class="visually-hidden">Tires and discs</h3>
+        </section>
+
+        <section class="tabs__panel" id="wares-sug-autoelectronics">
+          <h3 class="visually-hidden">Auto electronics</h3>
+        </section>
+
+        <section class="tabs__panel" id="wares-sug-tools">
+          <h3 class="visually-hidden">Tools</h3>
+        </section>
+
+        <section class="tabs__panel" id="wares-sug-accessories">
+          <h3 class="visually-hidden">Accessories and more</h3>
+        </section>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__container">
+          <div class="page-footer__form">
+            <h2>
+              Subscribe to our newsletter and find out about promotions faster
+            </h2>
+            <form action="#!" method="get">
+              <div class="page-footer__form-row">
+                <label class="visually-hidden" for="email"
+                  >Enter your e-mail:</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your e-mail:"
+                  required=""
+                />
+                <button type="submit" name="button">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="page-footer__sections">
+            <div class="page-footer__info">
+              <div class="page-footer__accordeon-container">
+                <h2>Information</h2>
+                <button type="button" name="button">
+                  <span class="visually-hidden">Information</span>
+                </button>
+              </div>
+              <ul>
+                <li>
+                  <a href="#!">About company</a>
+                </li>
+                <li>
+                  <a href="#!">Contacts</a>
+                </li>
+                <li>
+                  <a href="#!">Requisites</a>
+                </li>
+                <li>
+                  <a href="#!">The shops</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="page-footer__service">
+              <div class="page-footer__accordeon-container">
+                <h2>Service center</h2>
+                <button type="button" name="button">
+                  <span class="visually-hidden"> Service center </span>
+                </button>
+              </div>
+              <ul>
+                <li>
+                  <a href="#!">Delivery and pickup</a>
+                </li>
+                <li>
+                  <a href="#!">Payment</a>
+                </li>
+                <li>
+                  <a href="#!">Return-exchange</a>
+                </li>
+                <li>
+                  <a href="#!">news</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="page-footer__store">
+              <div class="page-footer__accordeon-container">
+                <h2>Online store</h2>
+                <button type="button" name="button">
+                  <span class="visually-hidden"> Online store </span>
+                </button>
+              </div>
+              <ul>
+                <li>
+                  <a href="#!">Delivery and pickup</a>
+                </li>
+                <li>
+                  <a href="#!">Payment</a>
+                </li>
+                <li>
+                  <a href="#!">Return-exchange</a>
+                </li>
+                <li>
+                  <a href="#!">News</a>
+                </li>
+                <li>
+                  <a href="#!">Stock</a>
+                </li>
+                <li>
+                  <a href="#!">Contract offer</a>
+                </li>
+                <li>
+                  <a href="#!">Personal data processing policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="page-footer__title">Online auto parts store</p>
+      </div>
+    </footer>
+
+    <script src="js/vendor/picturefill.min.js"></script>
+    <script src="js/vendor/imask.min.js"></script>
+    <script src="js/vendor/jquery-3.4.1.slim.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+    <script src="js/vendor/pollyfill-ie11-nodelist-foreach.js"></script>
+    <script src="js/main/menu.js"></script>
+    <script src="js/main/footer.js"></script>
+    <script src="js/main/sliders.js"></script>
+    <script src="js/main/tabs.js"></script>
+    <script src="js/main/filters.js"></script>
+    <script src="js/main/product-rating.js"></script>
+    <script src="js/main/favorite.js"></script>
+  </body>
+</html>
