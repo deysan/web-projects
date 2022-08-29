@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru" class="webp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Delivery of a healthy diet for mothers and expectant mothers, we will compose a personal menu for you"
+    />
+    <link
+      rel="preload"
+      href="fonts/Lato-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Lato-Regular.woff2"
+      as="font"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Healthy food for mothers</title>
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <header class="main-header" id="header">
+        <div class="main-header__wrapper">
+          <div class="main-header__wrapper-sandwich">
+            <a class="logo main-header__logo">Healthy mom</a>
+            <button class="main-header__sandwich-button" type="button">
+              Open the menu
+              <span class="main-header__button-row"></span>
+            </button>
+          </div>
+          <nav class="main-header__navigation">
+            <ul class="same-list menu main-header__menu">
+              <li class="menu__item">
+                <a class="link menu__link" href="#proper-diet"
+                  >The importance of proper nutrition</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="link menu__link" href="#advantage">Why are we?</a>
+              </li>
+              <li class="menu__item">
+                <a class="link menu__link" href="#order-form"
+                  >Where to order?</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main-content">
+        <section class="banner main-content__banner">
+          <div class="banner__leaves">
+            <div class="banner__mint banner__mint--biggest"></div>
+            <div class="banner__mint banner__mint--big"></div>
+            <div class="banner__mint banner__mint--small"></div>
+            <div class="banner__mint banner__mint--smallest"></div>
+            <div class="banner__mint banner__mint--midmost"></div>
+            <div class="banner__mint banner__mint--average"></div>
+          </div>
+          <div class="banner__wrapper">
+            <div class="banner__wrapper-text">
+              <h1>Healthy food delivery for mothers</h1>
+              <p>The right and tasty diet for you and your child</p>
+              <a class="link button banner__button" href="#order-form"
+                >Checkout</a
+              >
+            </div>
+            <div class="banner__wrapper-slider">
+              <ul class="same-list radio-slider banner__radio-slider">
+                <li class="radio-slider__item radio-slider__item--expectant">
+                  <input type="radio" name="toggle" id="expectant" checked="" />
+                  <label for="expectant">
+                    <span>For pregnant</span>
+                  </label>
+                  <div class="radio-slider__wrapper-image">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/slider-banner-expectant.webp    1x,
+                          img/slider-banner-expectant@2x.webp 2x
+                        "
+                      />
+                      <!-- 1x: 1065px; 2x: 2129 -->
+                      <img
+                        src="img/slider-banner-expectant.png"
+                        srcset="img/slider-banner-expectant@2x.png 2x"
+                        width="1065"
+                        height="737"
+                        alt="Pregnant young girl"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="radio-slider__item radio-slider__item--nursing">
+                  <input type="radio" name="toggle" id="nursing" />
+                  <label for="nursing">
+                    <span>For nursing</span>
+                  </label>
+                  <div class="radio-slider__wrapper-image">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/slider-banner-nursing.webp    1x,
+                          img/slider-banner-nursing@2x.webp 2x
+                        "
+                      />
+                      <!-- 1x: 449px; 2x: 898px -->
+                      <img
+                        src="img/slider-banner-nursing.png"
+                        srcset="img/slider-banner-nursing@2x.png 2x"
+                        width="449"
+                        height="724"
+                        alt="A young girl holds a baby near her chest"
+                      />
+                    </picture>
+                  </div>
+                </li>
+                <li class="radio-slider__item radio-slider__item--safe-treats">
+                  <input type="radio" name="toggle" id="safe-treats" />
+                  <label for="safe-treats">
+                    <span>Safe treats</span>
+                  </label>
+                  <div class="radio-slider__wrapper-image">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/slider-banner-safe-treats.webp    1x,
+                          img/slider-banner-safe-treats@2x.webp 2x
+                        "
+                      />
+                      <!-- 1x: 470px; 2x: 940px -->
+                      <img
+                        src="img/slider-banner-safe-treats.png"
+                        srcset="img/slider-banner-safe-treats@2x.png 2x"
+                        width="470"
+                        height="758"
+                        alt="The girl stands in a half -brown and bites a green apple"
+                      />
+                    </picture>
+                  </div>
+                </li>
+              </ul>
+              <div class="banner__wrapper-controls">
+                <button
+                  class="slider-button slider-button--prev banner__slider-button banner__slider-button--prev"
+                  type="button"
+                >
+                  Previous slide
+                </button>
+                <button
+                  class="slider-button slider-button--next banner__slider-button banner__slider-button--next"
+                  type="button"
+                >
+                  The next slide
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="proper-diet main-content__proper-diet" id="proper-diet">
+          <div class="proper-diet__wrapper-content">
+            <div class="proper-diet__content">
+              <div class="proper-diet__wrapper-nutritionist">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/nutritionist.webp    1x,
+                      img/nutritionist@2x.webp 2x
+                    "
+                  />
+                  <!-- 1x: 626px; 2x: 1252px -->
+                  <img
+                    src="img/nutritionist.png"
+                    srcset="img/nutritionist@2x.png 2x"
+                    width="626"
+                    height="582"
+                    alt="Nutritionist Ivanova Nadezhda Alexandrova"
+                  />
+                </picture>
+                <div class="proper-diet__nutritionist-name">
+                  <p class="proper-diet__name">Ivanova Nadezhda Alexandrovna</p>
+                  <p class="proper-diet__position">Certified nutritionist</p>
+                </div>
+              </div>
+              <div class="proper-diet__wrapper-text">
+                <h2>Why do you need to eat right?</h2>
+                <div class="proper-diet__wrapper-list">
+                  <ul class="same-list proper-diet__list">
+                    <li class="proper-diet__item">
+                      <p>Healthy child</p>
+                    </li>
+                    <li class="proper-diet__item">
+                      <p>Increasing immunity</p>
+                    </li>
+                    <li class="proper-diet__item">
+                      <p>Maintaining the figure</p>
+                    </li>
+                  </ul>
+                  <ul class="same-list proper-diet__list">
+                    <li class="proper-diet__item">
+                      <p>Lack of harmful components</p>
+                    </li>
+                    <li class="proper-diet__item proper-diet__item--long">
+                      <p>Reducing the load on the digestive organs</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="foodstuffs main-content__foodstuffs">
+          <h2>Mandatory healthy foods:</h2>
+          <div class="foodstuffs__swiper-container swiper-container">
+            <ul class="same-list foodstuffs__swiper-wrapper swiper-wrapper">
+              <li
+                class="foodstuffs__swiper-slide swiper-slide swiper-slide-active"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/slider-meat.webp 1x, img/slider-meat@2x.webp 2x"
+                  />
+                  <!-- 1x: 663px; 2x: 1326px -->
+                  <img
+                    src="img/slider-meat.jpg"
+                    srcset="img/slider-meat@2x.jpg 2x"
+                    alt="Cut rabbit"
+                    width="663"
+                    height="261"
+                  />
+                </picture>
+                <h3>Meat</h3>
+                <p>
+                  Rabbit, veal, turkey, chicken without skin.Meat dishes should
+                  be present daily in the diet in stew, baked or boiled.
+                </p>
+              </li>
+              <li
+                class="foodstuffs__swiper-slide swiper-slide swiper-slide-next"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/slider-cheese.webp    1x,
+                      img/slider-cheese@2x.webp 2x
+                    "
+                  />
+                  <!-- 1x: 663px; 2x: 1220px -->
+                  <img
+                    src="img/slider-cheese.jpg"
+                    srcset="img/slider-cheese@2x.jpg 2x"
+                    alt="Cut the cheese head"
+                    width="663"
+                    height="261"
+                  />
+                </picture>
+                <h3>Milk products</h3>
+                <p>
+                  Cheese, fermented, yogurt, cottage cheese, yogurt without
+                  additives, kefir. It is advisable to eat them with a nursing
+                  mother daily or every other day.
+                </p>
+              </li>
+              <li
+                class="foodstuffs__swiper-slide swiper-slide swiper-slide-prev"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/slider-vegetables.webp    1x,
+                      img/slider-vegetables@2x.webp 2x
+                    "
+                  />
+                  <!-- 1x: 663px; 2x: 1326px -->
+                  <img
+                    src="img/slider-vegetables.jpg"
+                    srcset="img/slider-vegetables@2x.jpg 2x"
+                    alt="Green vegetables and various herbs"
+                    width="663"
+                    height="261"
+                  />
+                </picture>
+                <h3>Vegetables</h3>
+                <p>
+                  Broccoli, pumpkin, cauliflower, turnip, cucumbers. Cook dishes
+                  from stewed mixtures without adding oil.
+                </p>
+              </li>
+            </ul>
+            <div class="foodstuffs__wrapper-controls">
+              <button
+                class="foodstuffs__slider-button foodstuffs__slider-button--prev slider-button slider-button--prev"
+                type="button"
+                tabindex="0"
+                role="button"
+                aria-label="Previous slide"
+              >
+                Previous slide
+              </button>
+              <button
+                class="foodstuffs__slider-button foodstuffs__slider-button--next slider-button slider-button--next"
+                type="button"
+                tabindex="0"
+                role="button"
+                aria-label="Next slide"
+              >
+                The next slide
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="advantage main-content__advantage" id="advantage">
+          <div class="advantage__wrapper-content">
+            <h2>Why do mothers choose our delivery?</h2>
+            <ul class="same-list advantage__list">
+              <li class="advantage__item advantage__item--eco-friendliness">
+                <h3>Environmental friendliness:</h3>
+                <p>Products are grown without chemistry</p>
+              </li>
+              <li class="advantage__item advantage__item--equilibrium">
+                <h3>Balance:</h3>
+                <p>
+                  Our dishes make leading nutritionists according to a unique
+                  recipe
+                </p>
+              </li>
+              <li class="advantage__item advantage__item--individuality">
+                <h3>Individuality:</h3>
+                <p>
+                  For your choice, we provide a large number of options for
+                  dishes
+                </p>
+              </li>
+              <li class="advantage__item advantage__item--useful">
+                <h3>Benefit:</h3>
+                <p>
+                  eating our products, you can be sure of your health and
+                  healthy health
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="main-content__wrapper-instagram-order">
+          <section class="instagram main-content__instagram">
+            <h2>Our Instagram</h2>
+            <p>
+              <a class="link instagram__link" href="#!">Subscribe</a>
+              , To keep abreast of the latest news
+            </p>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  img/instagram-images.webp    1x,
+                  img/instagram-images@2x.webp 2x
+                "
+              />
+              <!-- 1x: 1920px; 2x: 3840px -->
+              <img
+                src="img/instagram-images.png"
+                srcset="img/instagram-images@2x.png 2x"
+                width="1920"
+                height="1172"
+                alt="Various photos of healthy food and drinks"
+              />
+            </picture>
+          </section>
+          <section class="order-form" id="order-form">
+            <div class="order-form__wrapper">
+              <h2>Ordering a personal menu</h2>
+              <div class="order-form__wrapper-title">
+                <p>Want to get a personal menu?</p>
+              </div>
+              <p>
+                Leave a request and our operator will contact you to clarify the
+                details
+              </p>
+              <div class="order-form__wrapper-form">
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <div class="order-form__row">
+                    <label class="visual-hidden" for="name">Imagine</label>
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Your name"
+                      pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$"
+                      autocomplete="on"
+                      required=""
+                    />
+                  </div>
+                  <div class="order-form__row">
+                    <label class="visual-hidden" for="phone"
+                      >Indicate your phone number</label
+                    >
+                    <input
+                      id="phone"
+                      type="tel"
+                      name="phone"
+                      placeholder="Your phone"
+                      pattern="\+7\s\([0-9]{3}\)\s\d{3}[-]\d{2}[-]\d{2}"
+                      autocomplete="on"
+                      required=""
+                    />
+                  </div>
+                  <button class="button order-form__button" type="submit">
+                    Checkout
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <a class="link logo main-footer__logo" href="#header">Healthy mom</a>
+          <ul class="same-list menu main-footer__menu">
+            <li class="menu__item">
+              <a class="link menu__link" href="#proper-diet"
+                >The importance of proper nutrition</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="#advantage">Why are we?</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="#order-form">Where to order?</a>
+            </li>
+          </ul>
+          <ul class="same-list main-footer__conditions">
+            <li class="main-footer__conditions-item">
+              <a class="link main-footer__conditions-link" href="#!"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="main-footer__conditions-item">
+              <a class="link main-footer__conditions-link" href="#!"
+                >Online-use conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- vendor -->
+    <script src="js/vendor/i-mask.js"></script>
+    <script src="js/vendor/picturefill.js"></script>
+    <script src="js/vendor/scroll-smooth-polyfill.js"></script>
+    <script src="js/vendor/swiper.min.js"></script>
+    <script src="js/vendor/webp-check.js"></script>
+
+    <!-- modules -->
+    <script src="js/modules/banner-slider-mobile.js"></script>
+    <script src="js/modules/debounce.js"></script>
+    <script src="js/modules/menu.js"></script>
+    <script src="js/modules/phone-mask.js"></script>
+    <script src="js/modules/slider.js"></script>
+    <script src="js/modules/smooth-scroll.js"></script>
+  </body>
+</html>
